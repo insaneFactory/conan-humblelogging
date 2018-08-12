@@ -4,7 +4,7 @@ class HumbleloggingConan(ConanFile):
 	name = "humblelogging"
 	version = "3.0.2"
 	license = "THE BEER-WARE LICENSE"
-	url = "<Package recipe repository url here, for issues about the package>"
+	url = "https://github.com/insaneFactory/conan-humblelogging"
 	description = "HumbleLogging is a lightweight C++ logging framework. It aims to be extendible, easy to understand and as fast as possible."
 	settings = "os", "compiler", "build_type", "arch"
 	options = {"shared": [True, False]}
