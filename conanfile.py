@@ -2,7 +2,7 @@ from conans import ConanFile, CMake, tools
 
 class HumbleloggingConan(ConanFile):
 	name = "humblelogging"
-	version = "3.0.2"
+	version = "3.0.3"
 	license = "THE BEER-WARE LICENSE"
 	url = "https://github.com/insaneFactory/conan-humblelogging"
 	description = "HumbleLogging is a lightweight C++ logging framework. It aims to be extendible, easy to understand and as fast as possible."
