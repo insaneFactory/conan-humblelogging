@@ -7,8 +7,14 @@ class HumbleloggingConan(ConanFile):
 	url = "https://github.com/insaneFactory/conan-humblelogging"
 	description = "HumbleLogging is a lightweight C++ logging framework. It aims to be extendible, easy to understand and as fast as possible."
 	settings = "os", "compiler", "build_type", "arch"
-	options = {"shared": [True, False]}
-	default_options = "shared=False"
+	options = {
+		"shared": [True, False],
+		"fPIC": [True, False]
+	}
+	default_options = {
+		"shared": False,
+		"fPIC": True
+	}
 	generators = "cmake"
 
 	def source(self):
