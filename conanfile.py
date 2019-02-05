@@ -15,7 +15,12 @@ class HumbleloggingConan(ConanFile):
 		"shared": False,
 		"fPIC": True
 	}
+	build_requires = "cmake_installer/3.12.1@conan/stable"
 	generators = "cmake"
+
+	def configure(self):
+		if self.settings.os == "Windows":
+			del self.options.fPIC
 
 	def source(self):
 		self.run("git clone https://github.com/mfreiholz/humblelogging.git")
