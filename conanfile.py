@@ -15,7 +15,7 @@ class HumbleloggingConan(ConanFile):
 		"shared": False,
 		"fPIC": True
 	}
-	build_requires = "cmake_installer/3.15.5@conan/stable"
+	tool_requires = "cmake/3.22.3"
 	generators = "cmake"
 
 	def configure(self):
